@@ -173,6 +173,7 @@ nav a {
 }
 
 .gallery-group .gallery-item {
+    display: block;
     width: 100%;
 }
 
@@ -184,3 +185,4 @@ nav a {
 .gallery-group .gallery-item:last-of-type {
     padding-top: 50%;
 }
+
