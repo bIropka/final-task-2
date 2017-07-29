@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400");
+
+@font-face {
+    font-family: Aparajita, serif;
+    src: url(../source/fonts/aparaj.ttf) format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color: #464646;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    flex-grow: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-grow: 0;
+}
+
+.wrapper-inner {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*****************************************************************
+************ header
+*****************************************************************/
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    display: block;
+    width: 153px;
+    margin: 0 20px 0 0;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header-links {
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 0 0 33px;
+    color: #434343;
+    line-height: 40px;
+    letter-spacing: .9px;
+}
+
+.header-controls {
+    display: flex;
+    justify-content: flex-end;
+    background: #f6f6f6;
+}
+
+.header-controls a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 115px;
+    line-height: 1;
+    background: #05aecc;
+    color: #fff;
+    margin: 0 0 0 5px;
+    text-decoration: none;
+    letter-spacing: .9px;
+}
+
+.header-controls a:nth-of-type(2n) {
+    background: #f0626e;
+}
+
+.header-controls .to-cart,
+.header-controls .to-whishlist {
+    width: 142px;
+}
+
+.to-cart:after,
+.to-whishlist:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../source/images/icon-cart.png) no-repeat center;
+    margin: 0 0 0 10px;
+}
+
+.to-whishlist:after {
+    background: url(../source/images/icon-gift.png) no-repeat center;
+}
+
+/*****************************************************************
+************ gallery
+******************************************************************/
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.gallery-item {
+    width: 57%;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.gallery-group {
+    width: calc(43% - 5px);
+}
+
+.item-description {
+    position: absolute;
+}
+
+.item-control {
+    position: absolute;
+}
+
+.gallery-group .gallery-item {
+    width: 100%;
+}
+
+.gallery-group .gallery-item:first-of-type {
+    padding-top: 65%;
+    margin: 0 0 5px 0;
+}
+
+.gallery-group .gallery-item:last-of-type {
+    padding-top: 50%;
+}
